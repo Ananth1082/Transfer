@@ -1,0 +1,33 @@
+#container {
+  height: 50vh;
+  width: 50vh;
+  background-color: rgba(0, 255, 255, 0.732);
+  margin: auto;
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  
+}
+
+.disc {
+  height:2vh;
+  background-color:purple;
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  top: 35vh;
+  right:15vh;
+  
+  
+}
+.disc:nth-child(1) {
+  width:5vh;
+}
+.disc:nth-child(2) {
+  width:10vh;
+}
+.disc:nth-child(3) {
+  width:15vh;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <h1>Rock, Papers and Scissors using functions</h1>
+  <button onclick="ROCK()">Rock</button>
+  <button onclick="PAPER()">Paper</button>
+  <button onclick="SCISSORS()">Scissor</button>
+  <script>
+    /*****Basics******
+    product ={
+      name: 'shirt',
+      'delivery-time':'1',
+      rating: {} //object in a object
+    }
+    console.log(product);//Print object
+    console.log(product.name);//Accessing Values of an object
+    console.log(product.price);
+    console.log(product['delivery-time']);
+    product.new="Hi i'm new property";//Adding new properties
+    delete product.price;//Delete a property
+    console.log(product);
+    ************/
+    /*localStorage.setItem('score',JSON.stringify(score));
+    let score=JSON.parse((localStorage.getItem('score')));
+
+    function ROCK() {
+      let rand = Math.floor(Math.random()*3);
+  let computer=null;
+  switch(rand)
+  {
+    case 0:  computer = 'Scissors';
+            break;
+    case 1:  computer = 'Rock';
+            break;
+    case 2:  computer = 'Paper';
+            break;
+  }
+  if(computer === 'rock')
+    alert('Tie');
+  else if (computer === 'Paper')
+    alert('Lose');
+  else if(computer === 'Scissors'){
+    alert(`Win ${++score}`);
+  }
+    }
+     function SCISSORS() {
+      let rand = Math.floor(Math.random()*3);
+  let computer=null;
+  switch(rand)
+  {
+    case 0:  computer = 'Scissors';
+            break;
+    case 1:  computer = 'Rock';
+            break;
+    case 2:  computer = 'Paper';
+            break;
+  }
+  if(computer === 'rock')
+    alert('Lose');
+  else if (computer === 'Paper')
+    alert(`Win ${++score}`);
+  else if(computer === 'Scissors'){
+    alert('Tie');
+    }  
+  }
+  function PAPER() {
+    let rand = Math.floor(Math.random()*3);
+  let computer=null;
+  switch(rand)
+  {
+    case 0:  computer = 'Scissors';
+            break;
+    case 1:  computer = 'Rock';
+            break;
+    case 2:  computer = 'Paper';
+            break;
+  }
+  if(computer === 'rock'){
+    alert(`Win ${++score}`);
+  }
+  else if (computer === 'Paper')
+    alert('Tie');
+  else if(computer === 'Scissors')
+    alert('Lose');
+  
+  ;
+  }*/
+  //
+  const ob1={
+    message: 'hello'
+  }
+  const ob2 = {
+    message: 'world'
+  }
+  const ob3=ob1;
+  const { message }=ob1;
+  console.log(ob1);
+  console.log(ob2);
+  console.log(ob1===ob3);
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/*to remove arrow from input*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  width:30px;
+  height:30px;
+  border:none;
+  text-align: center;
+  caret-color: transparent;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+}
+
+td {
+  border:2px solid grey;
+ 
+}
+.row-1-col-1, .row-1-col-2, .row-1-col-3,.row-2-col-1,.row-1-col-1,.row-2-col-1, .row-2-col-2,.row-2-col-3,.row-3-col-1,.row-3-col-2,.row-3-col-3{
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+.row-1, .row-2, .row-3{
+  display: flex;
+  width:fit-content;
+}
+.sudoku-grid {
+  border: 3px solid black;
+  width: fit-content;
+  margin: auto;
+  
+}
+button {
+  margin-left: 45%;
+  width:10vw;
+  height:10vh;
+  border: none;
+  border-radius: 15px;
+  background-color: black;
+  color:white;
+}

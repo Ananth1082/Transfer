@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <h1>Rock, Papers and Scissors</h1>
+  <button onclick="let rand = Math.floor(Math.random()*3);
+  let computer=null;
+  switch(rand)
+  {
+    case 0:  computer = 'Scissors';
+            break;
+    case 1:  computer = 'Rock';
+            break;
+    case 2:  computer = 'Paper';
+            break;
+  }
+  if(computer === 'rock')
+    alert('Tie');
+  else if (computer === 'Paper')
+    alert('Lose');
+  else if(computer === 'Scissors')
+    alert('Win');"
+  >
+  Rock</button>
+  <button onclick="let rand = Math.floor(Math.random()*3);
+  let computer=null;
+  switch(rand)
+  {
+    case 0:  computer = 'Scissors';
+            break;
+    case 1:  computer = 'Rock';
+            break;
+    case 2:  computer = 'Paper';
+            break;
+  }
+  if(computer === 'rock')
+    alert('Win');
+  else if (computer === 'Paper')
+    alert('Tie');
+  else if(computer === 'Scissors')
+    alert('Lose');"
+  >Paper</button>
+  <button onclick="let rand = Math.floor(Math.random()*3);
+  let computer=null;
+  switch(rand)
+  {
+    case 0:  computer = 'Scissors';
+            break;
+    case 1:  computer = 'Rock';
+            break;
+    case 2:  computer = 'Paper';
+            break;
+  }
+  if(computer === 'rock')
+    alert('Lose');
+  else if (computer === 'Paper')
+    alert('Win');
+  else if(computer === 'Scissors')
+    alert('Tie');"
+    >Scissor</button>
+  <script>
+    
+    console.log(computer);
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+    #color-value {
+      border: none;
+      background-color: black;
+      padding: 25px 15px;
+      font-size: 20px;
+      color: white;
+      width: auto;
+      border: 1px solid white;
+      width:400px;
+      text-align: center;
+    }
+    button {
+      padding: 25px;
+      font-size: 20px;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      transition: background-color 1s;
+    }
+  </style>
+<body>
+  <div>
+    <input type="text" id="color-value" placeholder="Enter a color">
+  </div>
+
+    <script>
+    setInterval(changeColor,2000);
+    
+    function changeColor() {
+      let colorValue = `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`;
+      let colorDisp = document.getElementById("color-value");
+      colorDisp.value = `Background Color: ${colorValue}`;
+      document.body.style.backgroundColor = colorValue;
+    }
+  </script>
+</body>
+</html>

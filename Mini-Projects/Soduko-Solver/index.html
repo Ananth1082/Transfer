@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles.css">
+  <title>Soduko solver</title>
+  <script src="Scripts.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Sudoku Solver</h1>
+  </header>
+  <br>
+  <div class="sudoku-grid">
+    <div class="row-1">
+      <table class="row-1-col-1">
+          <tr>
+            <td><input type="number" class="subrow-1-subcol-1"></td>
+            <td><input type="number" class="subrow-1-subcol-2"></td>
+            <td><input type="number" class="subrow-1-subcol-3"></td>
+          </tr>
+          <tr>
+            <td><input type="number" class="subrow-2-subcol-1"></td>
+            <td><input type="number" class="subrow-2-subcol-2"></td>
+            <td><input type="number" class="subrow-2-subcol-3"></td>
+          </tr>
+          <tr>
+            <td><input type="number" class="subrow-3-subcol-1"></td>
+            <td><input type="number" class="subrow-3-subcol-2"></td>
+            <td><input type="number" class="subrow-3-subcol-3"></td>
+          </tr>  
+      </table>
+      <table class="row-1-col-2">
+        <tr>
+          <td><input type="number" class="subrow-1-subcol-4"></td>
+          <td><input type="number" class="subrow-1-subcol-5"></td>
+          <td><input type="number" class="subrow-1-subcol-6"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-2-subcol-4"></td>
+          <td><input type="number" class="subrow-2-subcol-5"></td>
+          <td><input type="number" class="subrow-2-subcol-6"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-3-subcol-4"></td>
+          <td><input type="number" class="subrow-3-subcol-5"></td>
+          <td><input type="number" class="subrow-3-subcol-6"></td>
+        </tr>
+        
+      </table>
+      <table class="row-1-col-3">
+        <tr>
+          <td><input type="number" class="subrow-1-subcol-7"></td>
+          <td><input type="number" class="subrow-1-subcol-8"></td>
+          <td><input type="number" class="subrow-1-subcol-9"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-2-subcol-7"></td>
+          <td><input type="number" class="subrow-2-subcol-8"></td>
+          <td><input type="number" class="subrow-2-subcol-9"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-3-subcol-7"></td>
+          <td><input type="number" class="subrow-3-subcol-8"></td>
+          <td><input type="number" class="subrow-3-subcol-9"></td>
+        </tr>
+    </table>
+    </div>
+
+    <div class="row-2">
+      <table class="row-2-col-1">
+          <tr>
+            <td><input type="number" class="subrow-4-subcol-1"></td>
+            <td><input type="number" class="subrow-4-subcol-2"></td>
+            <td><input type="number" class="subrow-4-subcol-3"></td>
+          </tr>
+          <tr>
+            <td><input type="number" class="subrow-5-subcol-1"></td>
+            <td><input type="number" class="subrow-5-subcol-2"></td>
+            <td><input type="number" class="subrow-5-subcol-3"></td>
+          </tr>
+          <tr>
+            <td><input type="number" class="subrow-6-subcol-1"></td>
+            <td><input type="number" class="subrow-6-subcol-2"></td>
+            <td><input type="number" class="subrow-6-subcol-3"></td>
+          </tr>
+          
+      </table>
+      <table class="row-2-col-2">
+        <tr>
+          <td><input type="number" class="subrow-4-subcol-4"></td>
+          <td><input type="number" class="subrow-4-subcol-5"></td>
+          <td><input type="number" class="subrow-4-subcol-6"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-5-subcol-4"></td>
+          <td><input type="number" class="subrow-5-subcol-5"></td>
+          <td><input type="number" class="subrow-5-subcol-6"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-6-subcol-4"></td>
+          <td><input type="number" class="subrow-6-subcol-5"></td>
+          <td><input type="number" class="subrow-6-subcol-6"></td>
+        </tr>
+        
+      </table>
+      <table class="row-2-col-3">
+        <tr>
+          <td><input type="number" class="subrow-4-subcol-7"></td>
+          <td><input type="number" class="subrow-4-subcol-8"></td>
+          <td><input type="number" class="subrow-4-subcol-9"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-5-subcol-7"></td>
+          <td><input type="number" class="subrow-5-subcol-8"></td>
+          <td><input type="number" class="subrow-5-subcol-9"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-6-subcol-7"></td>
+          <td><input type="number" class="subrow-6-subcol-8"></td>
+          <td><input type="number" class="subrow-6-subcol-9"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="row-3">
+      <table class="row-3-col-1">
+          <tr>
+            <td><input type="number" class="subrow-7-subcol-1"></td>
+            <td><input type="number" class="subrow-7-subcol-2"></td>
+            <td><input type="number" class="subrow-7-subcol-3"></td>
+          </tr>
+          <tr>
+            <td><input type="number" class="subrow-8-subcol-1"></td>
+            <td><input type="number" class="subrow-8-subcol-2"></td>
+            <td><input type="number" class="subrow-8-subcol-3"></td>
+          </tr>
+          <tr>
+            <td><input type="number" class="subrow-9-subcol-1"></td>
+            <td><input type="number" class="subrow-9-subcol-2"></td>
+            <td><input type="number" class="subrow-9-subcol-3"></td>
+          </tr>
+          
+      </table>
+      <table class="row-3-col-2">
+        <tr>
+          <td><input type="number" class="subrow-7-subcol-4"></td>
+          <td><input type="number" class="subrow-7-subcol-5"></td>
+          <td><input type="number" class="subrow-7-subcol-6"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-8-subcol-4"></td>
+          <td><input type="number" class="subrow-8-subcol-5"></td>
+          <td><input type="number" class="subrow-8-subcol-6"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-9-subcol-4"></td>
+          <td><input type="number" class="subrow-9-subcol-5"></td>
+          <td><input type="number" class="subrow-9-subcol-6"></td>
+        </tr>
+        
+      </table>
+      <table class="row-3-col-3">
+        <tr>
+          <td><input type="number" class="subrow-7-subcol-7"></td>
+          <td><input type="number" class="subrow-7-subcol-8"></td>
+          <td><input type="number" class="subrow-7-subcol-9"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-8-subcol-7"></td>
+          <td><input type="number" class="subrow-8-subcol-8"></td>
+          <td><input type="number" class="subrow-8-subcol-9"></td>
+        </tr>
+        <tr>
+          <td><input type="number" class="subrow-9-subcol-7"></td>
+          <td><input type="number" class="subrow-9-subcol-8"></td>
+          <td><input type="number" class="subrow-9-subcol-9"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <br>
+  <button onclick="getSudoku()">Solve</button>
+</body>
+</html>

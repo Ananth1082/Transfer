@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    div {
+      border: 2px solid black;
+      padding: 5px 15px 20px 15px;
+      text-align: center;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Counter</h1>
+    <h1 id="counter">Value</h1>
+    <button onclick="increment()">Increase</button>
+    <button onclick="decrement()">Decrease</button> 
+    <button onclick="reset()">Reset</button>
+  </div>
+
+  <script>
+    let count=0;
+    let result = document.getElementById("counter");
+    function increment(){
+      count++;
+      result.innerText=`${count}`;
+    }
+    function decrement(){
+      count--;
+      result.innerText=`${count}`;
+    }
+    function reset(){
+      count=0;
+      result.innerText=`${count}`;
+    }
+  </script>
+</body>
+</html>
